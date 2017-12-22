@@ -96,6 +96,33 @@
         }
     }
 
+    #self h2 {
+        top: 33%;
+        left: 40%;
+        font-size: 13vw;
+        line-height: 14.5vw;
+        color: white;
+        text-align: right;
+    }
+
+    #control h2 {
+        top: unset;
+        left: -20%;
+        bottom: 5%;
+        font-size: 21vw;
+        line-height: 25.5vw;
+        color: white;
+    }
+
+    #hierarchy h2 {
+        top: unset;
+        left: -20%;
+        bottom: 0%;
+        font-size: 20vw;
+        line-height: 23.5vw;
+        color: white;
+    }
+
     /*-------------PHONE CSS------------------*/
     @media (min-device-width: 200px) and (max-width: 600px) {
         #videopdf { margin-top: 3%; }
@@ -132,6 +159,43 @@
 
     /*-------------DESKTOP SMALL CSS------------------*/
     @media (min-width: 1201px) and (max-width: 1670px) {
+        #self h2 {
+            top: 22%;
+            left: -20%;
+            font-size: 7vw;
+            line-height: 8.5vw;
+            color: white;
+            text-align: right;
+        }
+
+        #control h2 {
+            top: unset;
+            left: -20%;
+            bottom: 5%;
+            font-size: 12vw;
+            line-height: 11.5vw;
+            color: white;
+        }
+
+        #hierarchy h2 {
+            top: unset;
+            left: -20%;
+            bottom: 5%;
+            font-size: 12vw;
+            line-height: 11.5vw;
+            color: white;
+        }
+
+        #borders h2 {
+            top: 10%;
+            left: -4%;
+            font-size: 6.5vw;
+            line-height: 7.25vw;
+            color: black;
+
+            div.right div.righttext { padding-top: 25%; }
+        }
+
         #videopdf { margin-top: 3%; }
         .title {
             h1 { padding-top: 0 }
@@ -143,23 +207,56 @@
 
         #hierarchy div.right div.righttext {
             padding-top: 5%;
-
-            p {
-                margin-bottom: .5vw;
-            }
-        }
-        #borders div.right div.righttext {
-            padding-top: 25%;
+            p { margin-bottom: .5vw; }
         }
     }
 
     /*-------------DESKTOP BIG CSS------------------*/
     @media (min-width:1671px) {
-        #videopdf { margin-top: 3%; }
+        #self h2 {
+            top: 22%;
+            left: -20%;
+            font-size: 7vw;
+            line-height: 8.5vw;
+            color: white;
+            text-align: right;
+        }
+
+        #control h2 {
+            top: unset;
+            left: -20%;
+            bottom: 5%;
+            font-size: 12vw;
+            line-height: 11.5vw;
+            color: white;
+        }
+
+        #hierarchy h2 {
+            top: unset;
+            left: -20%;
+            bottom: 5%;
+            font-size: 12vw;
+            line-height: 11.5vw;
+            color: white;
+        }
+
+        #borders h2 {
+            top: 10%;
+            left: -4%;
+            font-size: 6.5vw;
+            line-height: 7.25vw;
+            color: black;
+        }
+
+        #videopdf { margin-top: 5%; }
         .title {
+            h1 span.drop-word-1 { top: 0.3em; }
+            h1 span.drop-word-2 { top: 0.6em; }
+
             h1 { padding-top: 0 }
             h4 {
-                padding: 20% 0 0 16.5%;
+                font-size: 3vw;
+                padding: 22vw 0 0 18.5%;
                 margin-bottom: -25%;
             }
         }
