@@ -1,8 +1,11 @@
 dist: trusty
-sudo: true
+sudo: false
 language: ruby
 script: "./script/cibuild"
 before_script:
+  - sudo sed -i 's/port = 5433/port = 5432/' /etc/postgresql/10/main/postgresql.conf
+  - sudo cp /etc/postgresql/{9.4,10}/main/pg_hba.conf
+  - sudo service postgresql restart
   - psql -c 'create database crimethinc_test;' -U postgres
 
 services:
