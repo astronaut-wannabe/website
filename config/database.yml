@@ -12,6 +12,8 @@ test:
   <<: *default
   host: localhost
   database: crimethinc_test
+  username: postgres
+  password:
 
 production:
   <<: *default
