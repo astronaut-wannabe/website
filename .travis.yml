@@ -2,6 +2,8 @@ dist: trusty
 sudo: false
 language: ruby
 script: "./script/cibuild"
+before_script:
+  - psql -c 'create database crimethinc_test;' -U postgres
 
 services:
   - postgresql
