@@ -11,9 +11,7 @@ development:
 test:
   <<: *default
   host: localhost
-  database: crimethinc_test
-  username: postgres
-  password:
+  database: travisci_test
 
 production:
   <<: *default
